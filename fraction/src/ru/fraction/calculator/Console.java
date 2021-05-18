@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 
 public class Console {
 
-  static String info = "Список достпуных команд: \n" +
+  private static String info = "Список достпуных команд: \n" +
       "- exit - выход из приложения \n" +
       "- info - получить список команд \n" +
       "- example - примеры работы программы \n" +
@@ -15,7 +15,7 @@ public class Console {
       "- mul  - выполнить умножение 'value#1 mul value#2' \n" +
       "- div -  - выполнить деление. 'value#1 div value#2' \n";
 
-  static String example = "Пример преобразования числа к дроби: 0.5 -> 1/2 \n" +
+  private static String example = "Пример преобразования числа к дроби: 0.5 -> 1/2 \n" +
       "Пример сложения: 1/2 sum 3/4 -> 1 1/4 \n" +
       "Пример вычитания: 1/2 min 3/4 -> -1/4 \n" +
       "Пример умножения: 1/2 mul 3/4 -> 3/8 \n" +

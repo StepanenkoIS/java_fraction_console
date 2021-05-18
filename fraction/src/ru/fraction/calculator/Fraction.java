@@ -2,20 +2,20 @@ package ru.fraction.calculator;
 
 import java.util.Objects;
 
-class Fraction {
+public class Fraction {
   private int numerator;
   private int denominator;
   private int intNum;
   private int sign;
 
-  Fraction(int sign, int numerator, int denominator) {
+  public Fraction(int sign, int numerator, int denominator) {
     this.sign = sign;
     this.numerator = numerator;
     this.denominator = denominator;
     nodMethod();
   }
 
-  Fraction(int sign, int intNum, int numerator, int denominator) {
+  public Fraction(int sign, int intNum, int numerator, int denominator) {
     this.sign = sign;
     this.numerator = numerator;
     this.denominator = denominator;

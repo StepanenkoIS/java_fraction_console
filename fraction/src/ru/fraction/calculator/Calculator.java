@@ -1,8 +1,8 @@
 package ru.fraction.calculator;
 
-class Calculator {
+public class Calculator {
 
-  static Fraction multiply(Fraction fr1, Fraction fr2) {
+  public static Fraction multiply(Fraction fr1, Fraction fr2) {
     int numerator = (fr1.getIntNum() * fr1.getDenominator() + fr1.getNumerator()) * (fr2.getIntNum() * fr2.getDenominator() + fr2.getNumerator());
     int denominator = fr1.getDenominator() * fr2.getDenominator();
     int sign = fr1.getSign() * fr2.getSign();
@@ -10,7 +10,7 @@ class Calculator {
     return new Fraction(sign, numerator, denominator);
   }
 
-  static Fraction divide(Fraction fr1, Fraction fr2) {
+  public static Fraction divide(Fraction fr1, Fraction fr2) {
     int numerator = (fr1.getIntNum() * fr1.getDenominator() + fr1.getNumerator()) * fr2.getDenominator();
     int denominator = fr1.getDenominator() * (fr2.getIntNum() * fr2.getDenominator() + fr2.getNumerator());
     int sign = fr1.getSign() * fr2.getSign();
@@ -18,7 +18,7 @@ class Calculator {
     return new Fraction(sign, numerator, denominator);
   }
 
-  static Fraction sum(Fraction fr1, Fraction fr2) {
+  public static Fraction sum(Fraction fr1, Fraction fr2) {
 
     if (fr1.getNumerator() == 0) {
       return fr2;
@@ -45,7 +45,7 @@ class Calculator {
     return new Fraction(sign, numerator, denominator);
   }
 
-  static Fraction minus(Fraction fr1, Fraction fr2) {
+  public static Fraction minus(Fraction fr1, Fraction fr2) {
 
     if (fr1.getNumerator() == 0 && fr2.getNumerator() == 0) {
       new Fraction(0, 0, 0, 0);
